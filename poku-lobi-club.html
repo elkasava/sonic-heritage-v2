@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="nl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poku Lobi Club — Traditional Records</title>
+  <meta name="description" content="Word lid van de Poku Lobi Club en geniet van exclusieve voordelen: vroege toegang, backstage passes en speciale aanbiedingen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-poku">
+
+<!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Hoofdnavigatie">
+  <a href="index.html" class="nav-logo" aria-label="Traditional Records home">
+    <img src="../lols-main/lols-main/logo.png" alt="Traditional Records" width="36" height="36" />
+    <span>Traditional Records</span>
+  </a>
+  <div class="nav-links">
+    <a href="releases.html">Catalogus</a>
+    <a href="artiesten.html">Artiesten</a>
+    <a href="merch.html">Merch</a>
+    <a href="sync.html">Sync</a>
+    <a href="over.html">Over</a>
+    <a href="contact.html">Contact</a>
+    <a href="poku-lobi-club.html" class="poku-link active">Poku Lobi Club</a>
+  </div>
+  <div class="nav-actions">
+    <button class="btn-search" id="searchBtn" aria-label="Zoeken openen" title="Zoeken">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <button class="btn-cart" id="cartBtn" aria-label="Winkelwagen openen" title="Winkelwagen">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span class="cart-badge" id="cartBadge" aria-live="polite" style="display:none">0</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ MOBILE NAV ═══════════════════════════ -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <button class="mobile-nav-close" id="mobileNavClose" aria-label="Menu sluiten">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="releases.html">Catalogus</a>
+  <a href="artiesten.html">Artiesten</a>
+  <a href="merch.html">Merch</a>
+  <a href="sync.html">Sync</a>
+  <a href="over.html">Over</a>
+  <a href="contact.html">Contact</a>
+  <a href="poku-lobi-club.html" class="poku-link active">Poku Lobi Club</a>
+</div>
+<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+<!-- ═══════════════════════════ TICKER ═══════════════════════════ -->
+<div class="ticker-bar" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span>Poku Lobi Club — Exclusieve toegang voor echte fans</span>
+    <span>★</span>
+    <span>Vroege releases, backstage passes en meer</span>
+    <span>★</span>
+    <span>Traditional Records — Surinaamse muziek, wereldwijde uitstraling</span>
+    <span>★</span>
+    <span>Gratis verzending boven €50</span>
+    <span>★</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ POKU PAGE HERO ═══════════════════════════ -->
+<section class="poku-page-hero">
+  <div class="poku-hero-bg" aria-hidden="true"></div>
+  <div class="container poku-hero-content reveal">
+    <div class="poku-crown" aria-hidden="true">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+    <p class="label-text">Exclusief lidmaatschap</p>
+    <h1>Poku Lobi<br /><em>Club</em></h1>
+    <p class="poku-hero-sub">Voor de echte liefhebbers van Surinaamse muziek. Sluit u aan bij een gemeenschap die het verschil maakt.</p>
+    <a href="#pokuForm" class="btn-gold btn-lg">Word nu lid</a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ PERKS BENTO ═══════════════════════════ -->
+<section class="section poku-perks">
+  <div class="container">
+    <h2 class="section-title reveal">Voordelen van het lidmaatschap</h2>
+    <div class="poku-bento">
+
+      <div class="poku-bento-cell poku-bento-wide reveal">
+        <div class="poku-bento-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <h3>Vroege toegang tot releases</h3>
+        <p>Hoor elk nieuw album 48 uur voor de officiële release. Als eerste weten wat er aankomt — dat is het voorrecht van Poku Lobi leden.</p>
+        <span class="poku-bento-badge">Exclusief</span>
+      </div>
+
+      <div class="poku-bento-cell reveal">
+        <div class="poku-bento-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Backstage toegang</h3>
+        <p>Ontmoet de artiesten na het optreden. Achter de schermen, waar de echte muziek begint.</p>
+      </div>
+
+      <div class="poku-bento-cell reveal">
+        <div class="poku-bento-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 12V22H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+        </div>
+        <h3>Speciale kortingen</h3>
+        <p>20% korting op alle shop-aankopen, free shipping en jaarlijkse verrassingspakketten voor trouwe leden.</p>
+      </div>
+
+      <div class="poku-bento-cell poku-bento-wide reveal">
+        <div class="poku-bento-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3>Exclusieve content &amp; nieuwsbrief</h3>
+        <p>Maandelijkse nieuwsbrief met studio-updates, artiest-interviews, aankomende events en behind-the-scenes foto's die nergens anders te vinden zijn. Uw directe lijn naar Traditional Records.</p>
+        <span class="poku-bento-badge">Maandelijks</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ MEMBERSHIP FORM ═══════════════════════════ -->
+<section class="section poku-signup" id="pokuForm">
+  <div class="container poku-signup-inner">
+    <div class="poku-signup-copy reveal">
+      <h2>Word vandaag nog lid</h2>
+      <p>Het lidmaatschap kost <strong>€9,99 per maand</strong> en is maandelijks opzegbaar. Geen verplichtingen, wel alle voordelen.</p>
+      <ul class="poku-checklist">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Vroege luistertoegang (48 uur voor release)
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Backstage passes bij geselecteerde events
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          20% korting in de webshop
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Maandelijkse exclusieve nieuwsbrief
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Jaarlijks verrassingspakket
+        </li>
+      </ul>
+    </div>
+    <form class="poku-form reveal" id="pokuSignupForm" novalidate>
+      <h3>Aanmeldformulier</h3>
+      <div class="form-group">
+        <label class="form-label" for="pokuName">Naam *</label>
+        <input class="form-input" type="text" id="pokuName" name="name" placeholder="Uw volledige naam" required autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="pokuEmail">E-mailadres *</label>
+        <input class="form-input" type="email" id="pokuEmail" name="email" placeholder="uw@email.com" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="pokuCity">Woonplaats</label>
+        <input class="form-input" type="text" id="pokuCity" name="city" placeholder="Amsterdam, Paramaribo…" autocomplete="address-level2" />
+      </div>
+      <div class="form-group form-checkbox">
+        <input type="checkbox" id="pokuNewsletter" name="newsletter" checked />
+        <label for="pokuNewsletter">Ja, ik wil ook de maandelijkse nieuwsbrief ontvangen</label>
+      </div>
+      <button type="submit" class="btn-gold btn-full">Aanmelden voor €9,99/maand</button>
+      <p class="form-note">Veilige betaling via iDEAL of creditcard. Maandelijks opzegbaar.</p>
+      <div class="form-feedback" id="pokuFormFeedback" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="../lols-main/lols-main/logo.png" alt="Traditional Records" width="48" height="48" />
+      <p>Surinaamse muziek,<br />wereldwijde uitstraling.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footernavigatie">
+      <h4>Navigatie</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="artiesten.html">Artiesten</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="over.html">Over</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav" aria-label="Overige pagina's">
+      <h4>Meer</h4>
+      <ul>
+        <li><a href="poku-lobi-club.html">Poku Lobi Club</a></li>
+        <li><a href="sync.html">Sync &amp; Licenties</a></li>
+      </ul>
+    </nav>
+    <div class="footer-social">
+      <h4>Volg ons</h4>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" aria-label="Spotify" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 11.973C11.333 11 14.4 11.2 17 13M7 15.8c2.667-1.2 5.467-1.2 8.4.6M8.5 9c3.5-1 6.5-.8 9 1.5"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="footerYear"></span> Traditional Records. Alle rechten voorbehouden.</p>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════ PRODUCT MODAL ═══════════════════════════ -->
+<div class="modal-overlay" id="productModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modalTitle" class="modal-title">Product</h2>
+      <button class="modal-close" id="modalClose" aria-label="Modal sluiten">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ CART ═══════════════════════════ -->
+<div class="cart-overlay-bg" id="cartOverlayBg"></div>
+<aside class="cart-modal" id="cartModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Winkelwagen">
+  <div class="cart-header">
+    <h2>Winkelwagen</h2>
+    <button class="modal-close" id="cartClose" aria-label="Winkelwagen sluiten">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-total"><span>Totaal</span><span id="cartTotal">€ 0,00</span></div>
+    <button class="btn-primary btn-full" id="checkoutBtn">Bestellen</button>
+  </div>
+</aside>
+
+<!-- ═══════════════════════════ SEARCH OVERLAY ═══════════════════════════ -->
+<div class="search-overlay" id="searchOverlay" aria-hidden="true" role="search">
+  <div class="search-input-wrap">
+    <input type="search" class="search-field" id="searchField" placeholder="Zoek artiest, album, genre…" aria-label="Zoekterm invoeren" autocomplete="off" />
+    <button class="search-close-btn" id="searchCloseBtn" aria-label="Zoeken sluiten">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="search-results" id="searchResults" aria-live="polite"></div>
+</div>
+
+<!-- ═══════════════════════════ AUDIO BAR ═══════════════════════════ -->
+<div class="audio-bar hidden" id="audioBar" role="region" aria-label="Audio speler">
+  <img class="audio-art" id="audioArt" src="" alt="">
+  <div class="audio-info"><div class="audio-track" id="audioTrack">—</div><div class="audio-artist" id="audioArtist">—</div></div>
+  <div class="audio-controls">
+    <button class="audio-btn play" id="audioPlayBtn" aria-label="Afspelen/Pauzeren">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+  </div>
+  <div class="audio-progress">
+    <div class="audio-bar-track" id="audioTrackBar"><div class="audio-bar-fill" id="audioFill"></div></div>
+    <span class="audio-time" id="audioTime">00:00 / 00:30</span>
+  </div>
+  <div class="audio-volume">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+    <input class="volume-slider" id="volumeSlider" type="range" min="0" max="1" step="0.05">
+  </div>
+  <button class="audio-btn audio-close" id="audioClose" aria-label="Sluit">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+</div>
+
+<script>
+  // Footer year
+  const fyEl = document.getElementById('footerYear');
+  if (fyEl) fyEl.textContent = new Date().getFullYear();
+
+  // Navbar scroll state
+  const navEl = document.getElementById('navbar');
+  if (navEl) {
+    window.addEventListener('scroll', () => {
+      navEl.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  }
+
+  // Poku signup form
+  document.getElementById('pokuSignupForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('[type=submit]');
+    btn.textContent = 'Welkom bij Poku Lobi Club!';
+    btn.disabled = true;
+    setTimeout(() => { this.reset(); btn.textContent = 'Aanmelden voor €9,99/maand'; btn.disabled = false; }, 4000);
+  });
+</script>
+<script src="script.js" defer></script>
+</body>
+</html>

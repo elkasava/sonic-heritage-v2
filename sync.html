@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="nl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sync &amp; Licenties — Traditional Records</title>
+  <meta name="description" content="Licenseer Surinaamse muziek voor film, TV, games en reclame. Drie tiers: Standard, Standard Plus en Exclusive." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-sync">
+
+<!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Hoofdnavigatie">
+  <a href="index.html" class="nav-logo" aria-label="Traditional Records home">
+    <img src="../lols-main/lols-main/logo.png" alt="Traditional Records" width="36" height="36" />
+    <span>Traditional Records</span>
+  </a>
+  <div class="nav-links">
+    <a href="releases.html">Catalogus</a>
+    <a href="artiesten.html">Artiesten</a>
+    <a href="merch.html">Merch</a>
+    <a href="sync.html" class="active">Sync</a>
+    <a href="over.html">Over</a>
+    <a href="contact.html">Contact</a>
+    <a href="poku-lobi-club.html" class="poku-link">Poku Lobi Club</a>
+  </div>
+  <div class="nav-actions">
+    <button class="btn-search" id="searchBtn" aria-label="Zoeken openen" title="Zoeken">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <button class="btn-cart" id="cartBtn" aria-label="Winkelwagen openen" title="Winkelwagen">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span class="cart-badge" id="cartBadge" aria-live="polite">0</span>
+    </button>
+    <button class="btn-icon" id="themeToggle" aria-label="Thema wisselen" title="Thema">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ MOBILE NAV ═══════════════════════════ -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <button class="mobile-nav-close" id="mobileNavClose" aria-label="Menu sluiten">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="releases.html">Catalogus</a>
+  <a href="artiesten.html">Artiesten</a>
+  <a href="merch.html">Merch</a>
+  <a href="sync.html" class="active">Sync</a>
+  <a href="over.html">Over</a>
+  <a href="contact.html">Contact</a>
+  <a href="poku-lobi-club.html" class="poku-link">Poku Lobi Club</a>
+</div>
+<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+<!-- ═══════════════════════════ TICKER ═══════════════════════════ -->
+<div class="ticker-bar" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span>Sync &amp; Licenties — Surinaamse muziek voor film, TV en reclame</span>
+    <span>★</span>
+    <span>Drie tiers: Standard €150 · Standard Plus €350 · Exclusive €1200</span>
+    <span>★</span>
+    <span>Snelle afhandeling — licentie binnen 5 werkdagen</span>
+    <span>★</span>
+    <span>Traditional Records — Authentieke klanken voor uw project</span>
+    <span>★</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ PAGE HERO ═══════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <p class="label-text reveal">Muzieklicenties</p>
+    <h1 class="reveal">Sync &amp; <em>Licenties</em></h1>
+    <p class="page-hero-sub reveal">Authentieke Surinaamse muziek voor uw film, documentaire, reclame of game. Unieke klanken die uw project onderscheiden.</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ PRICING GRID ═══════════════════════════ -->
+<section class="section sync-pricing">
+  <div class="container">
+    <h2 class="section-title reveal">Licentietiers</h2>
+    <p class="section-sub reveal">Kies het pakket dat past bij uw project en budget. Alle prijzen zijn eenmalige tarieven per track.</p>
+    <div class="pricing-grid">
+
+      <!-- Standard -->
+      <div class="pricing-card reveal">
+        <div class="pricing-tier">Standard</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-amount">150</span>
+        </div>
+        <p class="pricing-desc">Ideaal voor kleinschalige projecten, social media, online video en studentenproducties.</p>
+        <ul class="pricing-features">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Eénmalig gebruik, 1 project</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Online distributie (max. 500k views)</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Geldigheidsduur: 1 jaar</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Digitale licentiebrief</li>
+          <li class="pricing-feature-no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Geen TV/bioscoop</li>
+          <li class="pricing-feature-no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Geen exclusiviteit</li>
+        </ul>
+        <a href="#syncForm" class="btn btn-outline btn-full">Aanvragen</a>
+      </div>
+
+      <!-- Standard Plus -->
+      <div class="pricing-card pricing-featured reveal">
+        <div class="pricing-badge">Populair</div>
+        <div class="pricing-tier">Standard Plus</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-amount">350</span>
+        </div>
+        <p class="pricing-desc">Voor professionele producties: documentaires, kortfilms, reclame en podcast-series.</p>
+        <ul class="pricing-features">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Eénmalig gebruik, 1 project</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Online + streaming (onbeperkt)</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> TV-uitzending (nationaal)</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Geldigheidsduur: 3 jaar</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Prioriteit-afhandeling (3 werkdagen)</li>
+          <li class="pricing-feature-no"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Geen exclusiviteit</li>
+        </ul>
+        <a href="#syncForm" class="btn btn-primary btn-full">Aanvragen</a>
+      </div>
+
+      <!-- Exclusive -->
+      <div class="pricing-card reveal">
+        <div class="pricing-tier">Exclusive</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-amount">1200</span>
+        </div>
+        <p class="pricing-desc">Volledige exclusiviteit voor internationale producties, grote campagnes en bioscoopreleases.</p>
+        <ul class="pricing-features">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Exclusief gebruik, alle media</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Wereldwijde distributie</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> TV, bioscoop en streaming</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Geldigheidsduur: onbeperkt</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dedicated account manager</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Op maat gesneden contract</li>
+        </ul>
+        <a href="#syncForm" class="btn btn-gold btn-full">Aanvragen</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ GENRE BROWSE ═══════════════════════════ -->
+<section class="section sync-genres">
+  <div class="container">
+    <h2 class="section-title reveal">Blader per genre</h2>
+    <p class="section-sub reveal">Elke stijl uit ons catalogus is beschikbaar voor licentie. Klik op een genre om de bijbehorende releases te verkennen.</p>
+    <div class="sync-genre-grid">
+      <a href="releases.html?genre=WINTI" class="sync-genre-card reveal">
+        <span class="sync-genre-name">Winti</span>
+        <p>Spirituele Afro-Surinaamse klanken met diepe rituele wortels.</p>
+      </a>
+      <a href="releases.html?genre=KASEKO" class="sync-genre-card reveal">
+        <span class="sync-genre-name">Kaseko</span>
+        <p>Energieke dansbare muziek — de populairste Surinaamse stijl.</p>
+      </a>
+      <a href="releases.html?genre=KAWINA" class="sync-genre-card reveal">
+        <span class="sync-genre-name">Kawina</span>
+        <p>Marron-geïnspireerde percussie met rauwe, authentieke energie.</p>
+      </a>
+      <a href="releases.html?genre=DANCEHALL" class="sync-genre-card reveal">
+        <span class="sync-genre-name">Dancehall</span>
+        <p>Moderne Caribische beats met Surinaamse identiteit.</p>
+      </a>
+      <a href="releases.html?genre=REGGAE" class="sync-genre-card reveal">
+        <span class="sync-genre-name">Reggae</span>
+        <p>Ontspannen grooves met een boodschap — tijdloos en veelzijdig.</p>
+      </a>
+      <a href="releases.html?genre=GOSPEL" class="sync-genre-card reveal">
+        <span class="sync-genre-name">Gospel</span>
+        <p>Krachtige vocalen en opbeurende melodieën voor emotionele scènes.</p>
+      </a>
+      <a href="releases.html?genre=ZOUK" class="sync-genre-card reveal">
+        <span class="sync-genre-name">Zouk</span>
+        <p>Romantische Caribische klanken, perfect voor sfeervolle momenten.</p>
+      </a>
+      <a href="releases.html?genre=GROOT+BAZUIN" class="sync-genre-card reveal">
+        <span class="sync-genre-name">Groot Bazuin</span>
+        <p>Grootschalige blazersmuziek met feestelijke impact.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ LICENSE REQUEST FORM ═══════════════════════════ -->
+<section class="section sync-form-section" id="syncForm">
+  <div class="container sync-form-inner">
+    <div class="sync-form-copy reveal">
+      <h2>Licentie aanvragen</h2>
+      <p>Vul het formulier in en wij nemen binnen 2 werkdagen contact met u op met een offerte en beschikbaarheidscheck.</p>
+      <div class="sync-info-block reveal">
+        <h4>Wat wij nodig hebben</h4>
+        <ul>
+          <li>Beschrijving van uw project</li>
+          <li>Welke track(s) u wilt licenseren</li>
+          <li>Gewenste tier en gebruiksduur</li>
+          <li>Distributiegebied en -kanalen</li>
+        </ul>
+      </div>
+      <div class="sync-info-block reveal">
+        <h4>Doorlooptijd</h4>
+        <p>Standard: 5 werkdagen<br />Standard Plus: 3 werkdagen<br />Exclusive: op maat, doorgaans 7–10 werkdagen</p>
+      </div>
+    </div>
+    <form class="sync-form reveal" id="licenseRequestForm" novalidate>
+      <div class="form-group">
+        <label for="syncName">Naam / bedrijf *</label>
+        <input type="text" id="syncName" name="name" placeholder="Uw naam of bedrijfsnaam" required autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label for="syncEmail">E-mailadres *</label>
+        <input type="email" id="syncEmail" name="email" placeholder="uw@email.com" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="syncTier">Gewenste tier *</label>
+        <select id="syncTier" name="tier" required>
+          <option value="" disabled selected>Kies een tier</option>
+          <option value="standard">Standard — €150</option>
+          <option value="standard-plus">Standard Plus — €350</option>
+          <option value="exclusive">Exclusive — €1200</option>
+          <option value="custom">Maatwerk — neem contact op</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="syncTrack">Track of genre *</label>
+        <input type="text" id="syncTrack" name="track" placeholder="Naam van het album/genre of 'weet ik nog niet'" required />
+      </div>
+      <div class="form-group">
+        <label for="syncProject">Projectomschrijving *</label>
+        <textarea id="syncProject" name="project" rows="5" placeholder="Beschrijf uw project: wat voor productie, platform, doelgroep, gebruiksduur…" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Aanvraag versturen</button>
+      <p class="form-note">U ontvangt een bevestiging per e-mail. Reactietijd: 2–5 werkdagen.</p>
+      <div class="form-feedback" id="syncFormFeedback" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="../lols-main/lols-main/logo.png" alt="Traditional Records" width="48" height="48" />
+      <p>Surinaamse muziek,<br />wereldwijde uitstraling.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footernavigatie">
+      <h4>Navigatie</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="artiesten.html">Artiesten</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="over.html">Over</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav" aria-label="Overige pagina's">
+      <h4>Meer</h4>
+      <ul>
+        <li><a href="poku-lobi-club.html">Poku Lobi Club</a></li>
+        <li><a href="sync.html">Sync &amp; Licenties</a></li>
+      </ul>
+    </nav>
+    <div class="footer-social">
+      <h4>Volg ons</h4>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" aria-label="Spotify" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 11.973C11.333 11 14.4 11.2 17 13M7 15.8c2.667-1.2 5.467-1.2 8.4.6M8.5 9c3.5-1 6.5-.8 9 1.5"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="footerYear"></span> Traditional Records. Alle rechten voorbehouden.</p>
+  </div>
+</footer>
+
+<!-- PRODUCT MODAL -->
+<div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalAlbum">
+  <div class="modal">
+    <div class="modal-header"><span class="modal-title">Release Details</span><button class="modal-close" id="modalClose" aria-label="Sluit modal">✕</button></div>
+    <div class="modal-body">
+      <img class="modal-art" id="modalArt" src="" alt="">
+      <div class="modal-genres" id="modalGenres"></div>
+      <div class="modal-artist" id="modalArtist"></div>
+      <div class="modal-album" id="modalAlbum"></div>
+      <div class="modal-desc" id="modalDesc"></div>
+      <div class="modal-price" id="modalPrice"></div>
+      <div class="modal-scarcity" id="modalScarcity"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-secondary" id="modalPlayBtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Preview</button>
+      <button class="btn-primary" id="modalAddBtn">In winkelwagen</button>
+    </div>
+  </div>
+</div>
+
+<!-- CART -->
+<div id="cartOverlayBg" class="cart-overlay-bg"></div>
+<aside class="cart-modal" id="cartModal" role="dialog" aria-modal="true" aria-label="Winkelwagen">
+  <div class="cart-header"><span class="cart-header-title">Winkelwagen</span><button class="cart-close" id="cartClose" aria-label="Sluit">✕</button></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-total"><span>Totaal</span><span class="cart-total-amount" id="cartTotal">€ 0,00</span></div>
+    <button class="btn-primary w-full">Afrekenen</button>
+  </div>
+</aside>
+
+<!-- SEARCH -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true">
+  <div class="search-input-wrap">
+    <span class="search-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
+    <input class="search-field" id="searchField" type="search" placeholder="Zoek artiest, album, genre…" autocomplete="off">
+    <button class="search-close-btn" id="searchCloseBtn">✕</button>
+  </div>
+  <p class="search-label">Zoek door de catalogus</p>
+  <div class="search-results" id="searchResults"></div>
+</div>
+<div class="audio-bar hidden" id="audioBar" role="region" aria-label="Audio speler">
+  <img class="audio-art" id="audioArt" src="" alt="">
+  <div class="audio-info"><div class="audio-track" id="audioTrack">—</div><div class="audio-artist" id="audioArtist">—</div></div>
+  <div class="audio-controls">
+    <button class="audio-btn play" id="audioPlayBtn" aria-label="Afspelen/Pauzeren">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+  </div>
+  <div class="audio-progress">
+    <div class="audio-bar-track" id="audioTrackBar"><div class="audio-bar-fill" id="audioFill"></div></div>
+    <span class="audio-time" id="audioTime">00:00 / 00:30</span>
+  </div>
+  <div class="audio-volume">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+    <input class="volume-slider" id="volumeSlider" type="range" min="0" max="1" step="0.05">
+  </div>
+  <button class="audio-btn audio-close" id="audioClose" aria-label="Sluit">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+</div>
+
+<script>
+  document.getElementById('licenseRequestForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('[type=submit]');
+    btn.textContent = 'Aanvraag ontvangen!';
+    btn.disabled = true;
+    setTimeout(() => { this.reset(); btn.textContent = 'Aanvraag versturen'; btn.disabled = false; }, 4000);
+  });
+</script>
+<script src="script.js" defer></script>
+</body>
+</html>
