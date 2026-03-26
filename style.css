@@ -16,8 +16,8 @@
     --heritage-black: #0A0A0A;
     --heritage-charcoal: #1A1A1A;
     --heritage-smoke: #2A2A2A;
-    --heritage-ember: #E84D1A;
-    --heritage-flame: #FF6B35;
+    --heritage-ember: #2D8B4E;
+    --heritage-flame: #3DAA63;
     --heritage-gold: #D4A847;
     --heritage-palm: #1B6B3A;
     --heritage-leaf: #2D8B4E;
@@ -154,7 +154,7 @@
     transition: background 200ms, transform 200ms, box-shadow 200ms;
     border: none; cursor: pointer;
   }
-  .btn-primary:hover { background: var(--heritage-flame); transform: scale(1.02); box-shadow: 0 4px 24px rgba(232,77,26,0.4); }
+  .btn-primary:hover { background: var(--heritage-flame); transform: scale(1.02); box-shadow: 0 4px 24px rgba(45,139,78,0.4); }
   .btn-primary:active { transform: scale(0.98); }
   .btn-secondary {
     display: inline-flex; align-items: center; justify-content: center; gap: 8px;
@@ -415,7 +415,7 @@
   .sync-hero p { font-size: 18px; color: var(--heritage-sand); max-width: 600px; line-height: 1.75; }
   .pricing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
   .pricing-card { background: var(--heritage-charcoal); border: 1px solid var(--heritage-smoke); border-radius: var(--radius-md); padding: 32px; transition: border-color 300ms, transform 300ms; position: relative; }
-  .pricing-card:hover { border-color: rgba(232,77,26,0.5); transform: translateY(-4px); }
+  .pricing-card:hover { border-color: rgba(45,139,78,0.5); transform: translateY(-4px); }
   .pricing-card.featured { border-color: var(--heritage-gold); }
   .pricing-card.featured::before { content: 'MEEST POPULAIR'; position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--heritage-gold); color: var(--heritage-black); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; padding: 4px 14px; border-radius: var(--radius-full); font-weight: 700; white-space: nowrap; }
   .pricing-tier { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--heritage-ember); margin-bottom: 10px; }
@@ -642,14 +642,14 @@
   padding: 28px 24px;
   transition: border-color 300ms, transform 300ms;
 }
-.value-card:hover { border-color: rgba(232,77,26,0.45); transform: translateY(-4px); }
+.value-card:hover { border-color: rgba(45,139,78,0.45); transform: translateY(-4px); }
 .value-icon {
   width: 56px;
   height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(232,77,26,0.1);
+  background: rgba(45,139,78,0.1);
   border-radius: var(--radius-sm);
   color: var(--heritage-ember);
   margin-bottom: 20px;
@@ -682,7 +682,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(232,77,26,0.12);
+  background: rgba(45,139,78,0.12);
   border-radius: var(--radius-sm);
   color: var(--heritage-ember);
 }
@@ -826,7 +826,7 @@ a.contact-item-value:hover { color: var(--heritage-ember); text-decoration: unde
   transition: border-color 300ms, transform 300ms;
   position: relative;
 }
-.pricing-card:hover { border-color: rgba(232,77,26,0.4); transform: translateY(-4px); }
+.pricing-card:hover { border-color: rgba(45,139,78,0.4); transform: translateY(-4px); }
 .pricing-featured { border-color: var(--heritage-gold); }
 .pricing-featured:hover { border-color: var(--heritage-gold); filter: brightness(1.05); }
 .pricing-badge {
